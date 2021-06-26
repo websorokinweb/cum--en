@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+p{
+    margin: 0;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 400;
+}
+button{
+    padding: 0;
+    outline: none;
+    transition: all .3s;
+}
+body{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    color: #ffffff;
+    background-color: #151325;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1203px;
+    padding: 0 19px;
+    margin: 0 auto;
+}
+
+.page-section--light{
+    background-color: #1a172d;
+}
+
+.section-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.section-title--lined{
+    position: relative;
+    padding-bottom: 38px;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 207px;        
+        background: linear-gradient(to right, #DA747C, #9A60EF, #837CF5);
+    }
+}
+
+.btn{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 85px 22px 75px;
+    background-image: url('../images/btn-background.png');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/btn-shadow.png');
+        width: 437px;
+        height: 208px;
+        z-index: -1;
+    }
+}
+
+
+.slick-arrow{
+    position: absolute;
+    top: 108px;
+    z-index: 3;
+    cursor: pointer;
+    height: 30px;
+    fill: #fff;
+}
+
+.slick-next{
+    transform: rotate(180deg);
+    right: -50px;
+}
+
+.slick-prev{
+    left: -78px;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content--active {
+    display: block;
+}
